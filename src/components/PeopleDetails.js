@@ -5,6 +5,7 @@ const PeopleDetails = ({ list, error, pending }) => {
   return (
     // Content Wrapper
     <div className="px-4 pb-16 pt-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-20">
+
       {/* Error if available */}
       {error && <div>Error: Something Went Wrong!</div>}
 
@@ -12,6 +13,7 @@ const PeopleDetails = ({ list, error, pending }) => {
       {pending && !list && (
         <div key="loading">
 
+          {/* Skeleton 1 */}
           <div className="mb-10 border-t border-b divide-y bg-slate-100 animate-pulse">
             <div className="grid py-8 sm:grid-cols-4">
               <div className="mb-4 sm:mb-0">
@@ -22,7 +24,7 @@ const PeopleDetails = ({ list, error, pending }) => {
               </div>
             </div>
           </div>
-
+          {/* Skeleton 2 */}
           <div className="mb-10 border-t border-b divide-y bg-slate-100 animate-pulse">
             <div className="grid py-8 sm:grid-cols-4">
               <div className="mb-4 sm:mb-0">
@@ -33,7 +35,7 @@ const PeopleDetails = ({ list, error, pending }) => {
               </div>
             </div>
           </div>
-
+          {/* Skeleton 3 */}
           <div className="mb-10 border-t border-b divide-y bg-slate-100 animate-pulse">
             <div className="grid py-8 sm:grid-cols-4">
               <div className="mb-4 sm:mb-0">
@@ -44,7 +46,7 @@ const PeopleDetails = ({ list, error, pending }) => {
               </div>
             </div>
           </div>
-
+          {/* Skeleton 4 */}
           <div className="mb-10 border-t border-b divide-y bg-slate-100 animate-pulse">
             <div className="grid py-8 sm:grid-cols-4">
               <div className="mb-4 sm:mb-0">
@@ -55,7 +57,7 @@ const PeopleDetails = ({ list, error, pending }) => {
               </div>
             </div>
           </div>
-
+          {/* Skeleton 5 */}
           <div className="mb-10 border-t border-b divide-y bg-slate-100 animate-pulse">
             <div className="grid py-8 sm:grid-cols-4">
               <div className="mb-4 sm:mb-0">
@@ -66,7 +68,7 @@ const PeopleDetails = ({ list, error, pending }) => {
               </div>
             </div>
           </div>
-
+          {/* Skeleton 6 */}
           <div className="mb-10 border-t border-b divide-y bg-slate-100 animate-pulse">
             <div className="grid py-8 sm:grid-cols-4">
               <div className="mb-4 sm:mb-0">
@@ -77,7 +79,7 @@ const PeopleDetails = ({ list, error, pending }) => {
               </div>
             </div>
           </div>
-
+          {/* Skeleton 7 */}
           <div className="mb-10 border-t border-b divide-y bg-slate-100 animate-pulse">
             <div className="grid py-8 sm:grid-cols-4">
               <div className="mb-4 sm:mb-0">
@@ -88,7 +90,7 @@ const PeopleDetails = ({ list, error, pending }) => {
               </div>
             </div>
           </div>
-
+          {/* Skeleton 8 */}
           <div className="mb-10 border-t border-b divide-y bg-slate-100 animate-pulse">
             <div className="grid py-8 sm:grid-cols-4">
               <div className="mb-4 sm:mb-0">
@@ -99,7 +101,7 @@ const PeopleDetails = ({ list, error, pending }) => {
               </div>
             </div>
           </div>
-
+          {/* Skeleton 9 */}
           <div className="mb-10 border-t border-b divide-y bg-slate-100 animate-pulse">
             <div className="grid py-8 sm:grid-cols-4">
               <div className="mb-4 sm:mb-0">
@@ -134,6 +136,7 @@ const PeopleDetails = ({ list, error, pending }) => {
       {/* Character */}
       {list && !pending && (
         <div key={list.created}>
+
           {/* Birth Year */}
           <div className="mb-10 border-t border-b divide-y">
             <div className="grid py-8 sm:grid-cols-4">

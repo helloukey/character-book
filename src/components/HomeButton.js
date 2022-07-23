@@ -1,3 +1,4 @@
+// imports
 import { Link } from "react-router-dom";
 
 const HomeButton = () => {
@@ -6,7 +7,7 @@ const HomeButton = () => {
       <div className="grid max-w-screen-lg gap-8 row-gap-6 sm:mx-auto lg:grid-cols-2">
         <div className="flex">
           <Link
-          to="/"
+            to="/"
             className="flex items-center px-4 py-2 mx-1 transition-colors duration-200 transform rounded-md hover:bg-deep-orange-accent-400 dark:hover:bg-deep-orange-accent-400 border-2 hover:text-white"
           >
             {`< Back To Homepage`}

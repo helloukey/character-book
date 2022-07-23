@@ -1,15 +1,22 @@
+// hooks
 import { useState } from "react";
+// react router
 import { Link } from "react-router-dom";
-
+// assets
 import Logo from "../assets/Logo.svg";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
+    // Wrapper
     <div className="bg-gray-900">
+
+      {/* Container */}
       <div className="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
+
+          {/* Logo */}
           <Link
             to="/"
             aria-label="Home"
@@ -21,6 +28,8 @@ const Navbar = () => {
               Character Book
             </span>
           </Link>
+
+          {/* Navlinks Container */}
           <ul className="flex items-center hidden space-x-8 lg:flex">
             <li>
               <Link
@@ -63,6 +72,8 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+
+          {/* Mobile Nav */}
           <div className="lg:hidden">
             <button
               aria-label="Open Menu"
@@ -90,6 +101,7 @@ const Navbar = () => {
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
+                      {/* Mobile Logo */}
                       <Link
                         to="/"
                         aria-label="Home"
@@ -119,6 +131,8 @@ const Navbar = () => {
                     </div>
                   </div>
                   <nav>
+
+                    {/* Mobile Navlinks Container */}
                     <ul className="space-y-4">
                       <li>
                         <Link
@@ -172,4 +186,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar
+export default Navbar;

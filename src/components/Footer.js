@@ -33,7 +33,7 @@ export const Footer = () => {
 
         {/* Copyright Text & Social Links */}
         <div className="flex flex-col justify-between pt-5 pb-10 border-t border-gray-800 sm:flex-row">
-
+          
           {/* Copyright Text */}
           <p className="text-sm text-gray-500">
             © Copyright 2022 Character Book. All rights reserved.
@@ -67,7 +67,6 @@ export const Footer = () => {
               </svg>
             </a>
           </div>
-          
         </div>
       </div>
     </div>

@@ -1,12 +1,19 @@
+// imports
 import { Link } from "react-router-dom";
 
 const List = ({ list, pending, error }) => {
-  console.log(list);
   return (
     
+    // Wrapper
     <div className="px-4 mx-auto mb-48 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+
+      {/* Container */}
       <div className="grid max-w-screen-lg gap-8 row-gap-6 sm:mx-auto lg:grid-cols-2">
+
+        {/* Show Error if avaiable */}
         {error && <div>{error}</div>}
+
+        {/* Show skeleton if pending */}
         {pending && (
           <>
             <div
@@ -312,6 +319,8 @@ const List = ({ list, pending, error }) => {
           </>
         )}
 
+
+        {/* Show list of characters */}
         {list && !pending &&
           list.results.map((data) => (
             <Link
